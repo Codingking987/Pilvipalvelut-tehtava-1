@@ -1,0 +1,21 @@
+name: Automaattinen analysointijärjestelmä
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  analyze-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Suoritetaan analyysiskripti
+        # Tässä annetaan suoritusoikeus skriptille ja ajetaan se
+        run: |
+          chmod +x analysoi.sh
+          ./analysoi.sh
