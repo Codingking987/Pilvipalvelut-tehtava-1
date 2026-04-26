@@ -1,0 +1,88 @@
+:root {
+  --primary: #4a90e2;
+  --secondary: #f5a623;
+  --bg: #f0f2f5;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.main-wrapper {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.status-bar {
+  background: #333;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.create-btn, .start-btn, .next-btn {
+  background: var(--primary);
+  color: white;
+  width: 100%;
+}
+
+.logout-btn {
+  background: #eee;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.product-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  margin: 15px 0;
+}
